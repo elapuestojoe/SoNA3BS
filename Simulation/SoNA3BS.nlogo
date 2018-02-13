@@ -208,6 +208,10 @@ globals[
 	xcord
 	ycord
   gravities
+
+  ;KEVIN 2017
+  RELEASE_FITNESS
+  BREEDING_REPLACEMENT_FITNESS
 ]
 @#$#@#$#@
 GRAPHICS-WINDOW
@@ -515,7 +519,7 @@ SWITCH
 816
 HUMAN_VISIT
 HUMAN_VISIT
-0
+1
 1
 -1000
 
@@ -668,7 +672,7 @@ SWITCH
 790
 OVITRAPS?
 OVITRAPS?
-1
+0
 1
 -1000
 
@@ -708,7 +712,7 @@ SWITCH
 364
 FOOD_DYNAMICS?
 FOOD_DYNAMICS?
-0
+1
 1
 -1000
 
@@ -721,7 +725,7 @@ EXPORT_RATE
 EXPORT_RATE
 0
 1000
-144.0
+288.0
 50
 1
 NIL
@@ -776,7 +780,7 @@ CHOOSER
 TEMPERATURE_TYPE
 TEMPERATURE_TYPE
 "Constant" "YearlyVariation" "DailyAndYearlyVariation"
-1
+0
 
 SLIDER
 579
@@ -801,7 +805,7 @@ CHOOSER
 BreedingZonesNumber
 BreedingZonesNumber
 10 15 20 25 30 "GoogleMap"
-3
+5
 
 TEXTBOX
 1408
@@ -892,7 +896,7 @@ SWITCH
 790
 RELEASE_FOGGING
 RELEASE_FOGGING
-1
+0
 1
 -1000
 
@@ -1266,7 +1270,7 @@ XML-init-write-tail-body
 XML-write-tail-outputs
 XML-finish-write-tail-body
 XML-finish-write</final>
-    <timeLimit steps="100000"/>
+    <timeLimit steps="8760"/>
     <enumeratedValueSet variable="RELEASE_WOLBACHIA">
       <value value="false"/>
     </enumeratedValueSet>
@@ -2152,6 +2156,110 @@ XML-finish-write</final>
     </enumeratedValueSet>
     <enumeratedValueSet variable="EXPORT_RATE">
       <value value="144"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="CatemacoFogging-Ovitraps" repetitions="1" runMetricsEveryStep="true">
+    <setup>setup
+XML-setup-name (word "GeneratedData/CatemacoBaseline_HET/CatemacoBaseline_HET ") 
+XML-init-write
+XML-write-header "Novel Control Measures." "HMSC" "Replicating RIDL/Wolbachia papers in smaller scale."
+XML-write-parameters
+XML-init-write-ticks-body</setup>
+    <go>go
+XML-write-tick-outputs EXPORT_RATE</go>
+    <final>ask humans[die-human]
+XML-finish-write-ticks-body
+XML-init-write-tail-body
+XML-write-tail-outputs
+XML-finish-write-tail-body
+XML-finish-write</final>
+    <timeLimit steps="5000"/>
+    <enumeratedValueSet variable="RELEASE_FOGGING">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="RELEASE_WOLBACHIA">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="RELEASE_STERILE">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="RELEASE_OXITECH">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="RELEASE_NEUTRAL">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="RELEASE_FITNESS">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="TEMPERATURE_TYPE">
+      <value value="&quot;Constant&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="CONSTANT_TEMPERATURE">
+      <value value="25"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="BreedingZonesNumber">
+      <value value="&quot;GoogleMap&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="FOOD_DYNAMICS?">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="FUMIGATION">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="BREEDING_EXTERMINATION">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="BREEDING_REPLACEMENT_WOLBACHIA">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="BREEDING_REPLACEMENT_STERILE">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="BREEDING_REPLACEMENT_OXITECH">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="BREEDING_REPLACEMENT_FITNESS">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="OVITRAPS?">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="SUGAR_BAITS?">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="OXITECH_RATIO">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="FITNESS_SELECTED_RATIO">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="WOLBACHIA_RATIO">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="STERILE_RATIO">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="HUMAN_VISIT">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="STORE_BITES">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="STORE_HOUSE_CONTACT">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="STORE_HUMAN_CONTACT">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="STORE_CONTROL_RELEASES">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="EXPORT_RATE">
+      <value value="288"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="INITIAL_POPULATION">
+      <value value="20000"/>
     </enumeratedValueSet>
   </experiment>
 </experiments>

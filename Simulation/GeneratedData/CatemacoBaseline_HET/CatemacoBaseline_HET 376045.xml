@@ -1,0 +1,23 @@
+<experiment>
+	<header>
+		<title>Novel Control Measures.</title>
+		<author>HMSC</author>
+		<date>07:36:51.843 PM 10-feb-2018</date>
+		<description>Replicating RIDL/Wolbachia papers in smaller scale.</description>
+	</header>
+	<parameters>
+		<parameter id="SecondsPerTick">300</parameter>
+		<parameter id="ScenarioNumber">GMap</parameter>
+		<parameter id="Temperature">25</parameter>
+		<parameter id="BreedingZonesNumber">GoogleMap</parameter>
+		<independent id="HUMAN_VISITING_PROBABILITY">0.05</independent>
+	</parameters>
+	<ticks_outputs>
+	</ticks_outputs>
+	<final_outputs>
+		<output id="biteList">[]</output>
+		<output id="contactList">[{[{bb}]} {[{av}]} {[{br}]} {[{ch}]} {[{ae}]} {[{bj}]} {[{ac}]} {[{bx}]} {[{bk}]} {[{cg}]} {[{cj}]} {[{ce}]} {[{aq}]} {[{ad}]} {[{bl}]} {[{at}]} {[{bs}]} {[{bh}]} {[{bf}]} {[{bi}]} {[{bt}]} {[{bd}]} {[{ab}]} {[{bq}]} {[{ar}]} {[{am}]} {[{an}]} {[{ai}]} {[{bn}]} {[{bo}]} {[{cd}]} {[{ck}]} {[{aj}]} {[{bm}]} {[{ao}]} {[{ak}]} {[{cf}]} {[{as}]} {[{bc}]} {[{bg}]} {[{au}]} {[{bw}]} {[{ap}]} {[{cc}]} {[{by}]} {[{ax}]} {[{be}]} {[{al}]} {[{ba}]} {[{bp}]} {[{ca}]} {[{ag}]} {[{ay}]} {[{bu}]} {[{bv}]} {[{af}]} {[{cb}]} {[{bz}]} {[{aw}]} {[{aa}]} {[{ah}]} {[{az}]} {[{ci}]}]</output>
+		<output id="contactHousesList">[{[{bb}]} {[{av}]} {[{br}]} {[{ch}]} {[{ae}]} {[{bj}]} {[{ac}]} {[{bx}]} {[{bk}]} {[{cg}]} {[{cj}]} {[{ce}]} {[{aq}]} {[{ad}]} {[{bl}]} {[{at}]} {[{bs}]} {[{bh}]} {[{bf}]} {[{bi}]} {[{bt}]} {[{bd}]} {[{ab}]} {[{bq}]} {[{ar}]} {[{am}]} {[{an}]} {[{ai}]} {[{bn}]} {[{bo}]} {[{cd}]} {[{ck}]} {[{aj}]} {[{bm}]} {[{ao}]} {[{ak}]} {[{cf}]} {[{as}]} {[{bc}]} {[{bg}]} {[{au}]} {[{bw}]} {[{ap}]} {[{cc}]} {[{by}]} {[{ax}]} {[{be}]} {[{al}]} {[{ba}]} {[{bp}]} {[{ca}]} {[{ag}]} {[{ay}]} {[{bu}]} {[{bv}]} {[{af}]} {[{cb}]} {[{bz}]} {[{aw}]} {[{aa}]} {[{ah}]} {[{az}]} {[{ci}]}]</output>
+		<output id="controlReleasesList">[]</output>
+	</final_outputs>
+</experiment>
