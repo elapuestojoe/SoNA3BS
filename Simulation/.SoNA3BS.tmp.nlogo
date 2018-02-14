@@ -2245,7 +2245,7 @@ XML-finish-write</final>
       <value value="false"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="STORE_BITES">
-      <value value="false"/>
+      <value value="true"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="STORE_HOUSE_CONTACT">
       <value value="false"/>
