@@ -307,15 +307,15 @@ true
 true
 "" ""
 PENS
-"Sterile" 1.0 0 -13840069 true "" "plot count aedesp with [sterile? = true]"
-"MatedSterile" 1.0 0 -8330359 true "" "plot count aedesp with [sterileMate? = true]"
-"Wolbachia" 1.0 0 -2674135 true "" "plot count aedesp with [wolbachia? = true and life_stage = 3]"
-"MatedWolbachia" 1.0 0 -1604481 true "" "plot count aedesp with [wolbachiaMate? = true and life_stage = 3]"
-"RIDL" 1.0 0 -8431303 true "" "plot count aedesp with [oxitech? = true and life_stage = 3]"
-"MatedRIDL" 1.0 0 -3889007 true "" "plot count aedesp with [oxitechMate? = true and life_stage = 3]"
-"MatedFemales" 1.0 0 -7500403 true "" "plot count aedesp with [(mated? = true) and (female? = true)]"
+"Sterile" 1.0 0 -13840069 true "" "plot count aedesp with [sterile?]"
+"MatedSterile" 1.0 0 -8330359 true "" "plot count aedesp with [sterileMate?]"
+"Wolbachia" 1.0 0 -2674135 true "" "plot count aedesp with [wolbachia? and life_stage = 3]"
+"MatedWolbachia" 1.0 0 -1604481 true "" "plot count aedesp with [wolbachiaMate? and life_stage = 3]"
+"RIDL" 1.0 0 -8431303 true "" "plot count aedesp with [oxitech? and life_stage = 3]"
+"MatedRIDL" 1.0 0 -3889007 true "" "plot count aedesp with [oxitechMate? and life_stage = 3]"
+"MatedFemales" 1.0 0 -7500403 true "" "plot count aedesp with [(mated?) and (female?)]"
 "Adults" 1.0 0 -6759204 true "" "plot count aedesp with[life_stage = 3]"
-"AdultFemales" 1.0 0 -955883 true "" "plot (count aedesp with[female? = True and life_stage = 3])"
+"AdultFemales" 1.0 0 -955883 true "" "plot (count aedesp with[female? and life_stage = 3])"
 "Fogging" 1.0 0 -14835848 true "" "plot FOGGING_KILL_PROBABILITY"
 
 SLIDER
@@ -858,11 +858,11 @@ PENS
 "T: Rr" 1.0 0 -11053225 true "" "plot count aedesp with [ridl_gene = 1]"
 "T: RR" 1.0 0 -16777216 true "" "plot count aedesp with [ridl_gene = 2]"
 "M: rr" 1.0 0 -14454117 true "" "plot count aedesp with [ridl_gene = 0 and female? = false]"
-"F: rr" 1.0 0 -1184463 true "" "plot count aedesp with [ridl_gene = 0 and female? = true]"
+"F: rr" 1.0 0 -1184463 true "" "plot count aedesp with [ridl_gene = 0 and female?]"
 "M: Rr" 1.0 0 -955883 true "" "plot count aedesp with [ridl_gene = 1 and female? = false]"
-"F: Rr" 1.0 0 -10263788 true "" "plot count aedesp with [ridl_gene = 1 and female? = true]"
+"F: Rr" 1.0 0 -10263788 true "" "plot count aedesp with [ridl_gene = 1 and female?]"
 "M: RR" 1.0 0 -2674135 true "" "plot count aedesp with [ridl_gene = 2 and female? = false]"
-"F: RR" 1.0 0 -1264960 true "" "plot count aedesp with [ridl_gene = 2 and female? = true]"
+"F: RR" 1.0 0 -1264960 true "" "plot count aedesp with [ridl_gene = 2 and female?]"
 
 SLIDER
 579

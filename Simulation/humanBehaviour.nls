@@ -15,10 +15,10 @@
 ;;****************************BODY**************************************************************************************************************
 to act-human-day
     ;kill-mosquito-probabilistically
-    ifelse(worker? = FALSE)[act-human-non-worker][act-human-worker]
+    ifelse(worker?)[act-human-worker][act-human-non-worker]
 end
 to act-human-worker
-   ifelse(goWork? = TRUE)
+   ifelse(goWork?)
    [
        ;;If it is time to go to work
        move-probabilistically-towards (min-one-of workZones [distance myself]) HUMAN_MOVEMENT_SPEED HUMAN_MOVEMENT_FOCUS HUMAN_MOVEMENT_SPEED_DEVIATION
@@ -41,7 +41,7 @@ to act-human-non-worker
          set visitingHouseNumber (random length groups - 1)
        ]
     ]
-    ifelse(visiting? = true and HUMAN_VISIT)
+    ifelse(visiting? and HUMAN_VISIT)
     [
         ifelse(visitingCooldown > 0)
         [
