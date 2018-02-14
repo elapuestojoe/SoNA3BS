@@ -72,7 +72,9 @@ end
 ;****Static****;
 to XML-setup-name [experiment_name]
   let directory experiment_name
-  set FILE_NAME (word experiment_name (random 500000) ".xml");(word experiment_name date-and-time "-" (random 1000) ".xml")
+  let n (random 500000)
+  set FILE_NAME (word experiment_name n ".xml");(word experiment_name date-and-time "-" (random 1000) ".xml")
+  set BITE_FILE (word experiment_name n "BITES.txt")
 end
 to XML-init-write
   if (file-exists? FILE_NAME) [carefully [file-delete FILE_NAME] [print error-message]]
@@ -122,11 +124,9 @@ to XML-finish-write-tail-body
   file-close
 end
 
-to DEBUG [every-N-step]
+to DEBUGX [every-N-step]
   if(ticks mod every-N-step = 0)[
     write "MOSQUITOES "
     print count aedesp
-    write "AEDESP"
-    print count aedesP
   ]
 end

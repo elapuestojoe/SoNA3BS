@@ -94,6 +94,7 @@ globals[
 	BLOODFEED_COOLDOWN
 	BLOODFEED_COOLDOWN_DISPERSION
 	BREEDING_DESTROY?
+  	BITE_FILE
 	CONTACT_REFRESH_RATE
 	CONTROL_RELEASES_LIST
 	DAILY_TEMPERATURE_DEVIATION
@@ -725,7 +726,7 @@ EXPORT_RATE
 EXPORT_RATE
 0
 1000
-144.0
+1000.0
 50
 1
 NIL
@@ -2167,7 +2168,7 @@ XML-write-parameters
 XML-init-write-ticks-body</setup>
     <go>go
 XML-write-tick-outputs EXPORT_RATE
-DEBUG 500</go>
+DEBUGX 500</go>
     <final>ask humans[die-human]
 XML-finish-write-ticks-body
 XML-init-write-tail-body

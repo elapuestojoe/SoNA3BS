@@ -114,16 +114,15 @@ to act-bloodfeed
 end
 ;REPRODUCTIVE ACTIONS-----------------------------------------------------------------------------------------------------------------------------
 to act-reproductive
-  if((mated? = false) and (laidEggs? = false) and (bloodfed? = false))[act-mate]
-  if((female? = true) and (mated? = true))
+  if((not mated? and not laidEggs?) and (not bloodfed?))[act-mate]
+  if(female? and mated?)
   [
-      ifelse(laidEggs? = false)
+      ifelse(laidEggs?)
+      [act-resetFemale]
       [
-          ifelse(bloodfed? = false)
-          [act-not-bloodfed-yet]
+          ifelse(bloodfed?)
           [act-bloodfed-yet]
-      ][
-          act-resetFemale
+          [act-not-bloodfed-yet]
       ]
   ]
 end

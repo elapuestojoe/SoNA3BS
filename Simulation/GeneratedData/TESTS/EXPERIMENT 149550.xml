@@ -1,0 +1,149 @@
+<experiment>
+	<header>
+		<title>Novel Control Measures.</title>
+		<author>HMSC</author>
+		<date>07:28:42.306 PM 13-feb-2018</date>
+		<description>Replicating RIDL/Wolbachia papers in smaller scale.</description>
+	</header>
+	<parameters>
+		<parameter id="SecondsPerTick">300</parameter>
+		<parameter id="ScenarioNumber">GMap</parameter>
+		<parameter id="Temperature">25</parameter>
+		<parameter id="BreedingZonesNumber">GoogleMap</parameter>
+		<independent id="HUMAN_VISITING_PROBABILITY">0.05</independent>
+	</parameters>
+	<ticks_outputs>
+		<tick id="4000">
+			<output id="MosquitoPopulation">2708</output>
+			<output id="EggsPopulation">1865</output>
+			<output id="LarvaPopulation">685</output>
+			<output id="PupaPopulation">0</output>
+			<output id="AdultPopulation">158</output>
+			<output id="WolbachiaPopulation">0</output>
+			<output id="SterilePopulation">0</output>
+			<output id="FitnessPopulation">0</output>
+			<output id="OxitecPopulation">0</output>
+			<output id="EggDeathByInhibition">0.010034655609989946</output>
+			<output id="LarvaDeathByDensity">4.956608485402667E-4</output>
+			<output id="Temperature">25</output>
+			<output id="MeanOvipositionCount">1</output>
+			<output id="MeanAdultLifespan">15</output>
+			<output id="MeanLifespan">30</output>
+			<output id="FemalePopulation">74</output>
+		</tick>
+		<tick id="5000">
+			<output id="MosquitoPopulation">2490</output>
+			<output id="EggsPopulation">1761</output>
+			<output id="LarvaPopulation">212</output>
+			<output id="PupaPopulation">396</output>
+			<output id="AdultPopulation">121</output>
+			<output id="WolbachiaPopulation">0</output>
+			<output id="SterilePopulation">0</output>
+			<output id="FitnessPopulation">0</output>
+			<output id="OxitecPopulation">0</output>
+			<output id="EggDeathByInhibition">0.0030864611278540507</output>
+			<output id="LarvaDeathByDensity">5.348464168399771E-5</output>
+			<output id="Temperature">25</output>
+			<output id="MeanOvipositionCount">1</output>
+			<output id="MeanAdultLifespan">15</output>
+			<output id="MeanLifespan">30</output>
+			<output id="FemalePopulation">59</output>
+		</tick>
+		<tick id="6000">
+			<output id="MosquitoPopulation">3150</output>
+			<output id="EggsPopulation">2143</output>
+			<output id="LarvaPopulation">510</output>
+			<output id="PupaPopulation">44</output>
+			<output id="AdultPopulation">453</output>
+			<output id="WolbachiaPopulation">0</output>
+			<output id="SterilePopulation">0</output>
+			<output id="FitnessPopulation">0</output>
+			<output id="OxitecPopulation">0</output>
+			<output id="EggDeathByInhibition">0.007474794484992511</output>
+			<output id="LarvaDeathByDensity">2.2538384001018612E-4</output>
+			<output id="Temperature">25</output>
+			<output id="MeanOvipositionCount">1</output>
+			<output id="MeanAdultLifespan">15</output>
+			<output id="MeanLifespan">30</output>
+			<output id="FemalePopulation">192</output>
+		</tick>
+		<tick id="7000">
+			<output id="MosquitoPopulation">2296</output>
+			<output id="EggsPopulation">1223</output>
+			<output id="LarvaPopulation">299</output>
+			<output id="PupaPopulation">340</output>
+			<output id="AdultPopulation">434</output>
+			<output id="WolbachiaPopulation">0</output>
+			<output id="SterilePopulation">0</output>
+			<output id="FitnessPopulation">0</output>
+			<output id="OxitecPopulation">0</output>
+			<output id="EggDeathByInhibition">0.004359077801424204</output>
+			<output id="LarvaDeathByDensity">8.194392713257683E-5</output>
+			<output id="Temperature">25</output>
+			<output id="MeanOvipositionCount">1</output>
+			<output id="MeanAdultLifespan">15</output>
+			<output id="MeanLifespan">30</output>
+			<output id="FemalePopulation">177</output>
+		</tick>
+		<tick id="8000">
+			<output id="MosquitoPopulation">2458</output>
+			<output id="EggsPopulation">1305</output>
+			<output id="LarvaPopulation">389</output>
+			<output id="PupaPopulation">146</output>
+			<output id="AdultPopulation">618</output>
+			<output id="WolbachiaPopulation">0</output>
+			<output id="SterilePopulation">0</output>
+			<output id="FitnessPopulation">0</output>
+			<output id="OxitecPopulation">0</output>
+			<output id="EggDeathByInhibition">0.005690205586422871</output>
+			<output id="LarvaDeathByDensity">1.2681283518968867E-4</output>
+			<output id="Temperature">25</output>
+			<output id="MeanOvipositionCount">1</output>
+			<output id="MeanAdultLifespan">15</output>
+			<output id="MeanLifespan">30</output>
+			<output id="FemalePopulation">251</output>
+		</tick>
+		<tick id="9000">
+			<output id="MosquitoPopulation">6576</output>
+			<output id="EggsPopulation">5254</output>
+			<output id="LarvaPopulation">412</output>
+			<output id="PupaPopulation">272</output>
+			<output id="AdultPopulation">638</output>
+			<output id="WolbachiaPopulation">0</output>
+			<output id="SterilePopulation">0</output>
+			<output id="FitnessPopulation">0</output>
+			<output id="OxitecPopulation">0</output>
+			<output id="EggDeathByInhibition">0.006026644477136819</output>
+			<output id="LarvaDeathByDensity">1.4163751237137478E-4</output>
+			<output id="Temperature">25</output>
+			<output id="MeanOvipositionCount">1</output>
+			<output id="MeanAdultLifespan">15</output>
+			<output id="MeanLifespan">30</output>
+			<output id="FemalePopulation">249</output>
+		</tick>
+		<tick id="10000">
+			<output id="MosquitoPopulation">3639</output>
+			<output id="EggsPopulation">2027</output>
+			<output id="LarvaPopulation">781</output>
+			<output id="PupaPopulation">72</output>
+			<output id="AdultPopulation">759</output>
+			<output id="WolbachiaPopulation">0</output>
+			<output id="SterilePopulation">0</output>
+			<output id="FitnessPopulation">0</output>
+			<output id="OxitecPopulation">0</output>
+			<output id="EggDeathByInhibition">0.011409666728559998</output>
+			<output id="LarvaDeathByDensity">7.362733791399881E-4</output>
+			<output id="Temperature">25</output>
+			<output id="MeanOvipositionCount">1</output>
+			<output id="MeanAdultLifespan">15</output>
+			<output id="MeanLifespan">30</output>
+			<output id="FemalePopulation">294</output>
+		</tick>
+	</ticks_outputs>
+	<final_outputs>
+		<output id="biteList">[{[{666} {bg,3037} {bc,4786}]} {[{371} {aq,3314} {aq,5067}]} {[{716} {bt,3071} {bb,5705}]} {[{699} {bi,3577} {bl,5347}]} {[{587} {ad,3849} {ai,5634}]} {[{476} {ac,4585} {bf,6389}]} {[{427} {ac,3920} {ap,5675}]} {[{583} {ac,4540} {ac,6301}]} {[{532} {bg,4565} {bk,6327}]} {[{659} {at,4766} {bt,6483}]} {[{629} {br,4640} {bx,6525}]} {[{516} {cf,4349} {cf,6174}]} {[{505} {ab,3367} {bg,5117} {bg,6869}]} {[{425} {bn,4523} {ap,6278}]} {[{573} {ac,3737} {aw,5493} {be,7333}]} {[{472} {cf,5869} {cf,7813}]} {[{512} {aq,4238} {ap,6014} {aq,7764}]} {[{419} {by,3648} {cd,5410} {ce,7207}]} {[{687} {bo,3757} {bp,6728}]} {[{421} {bt,5188} {bt,6998}]} {[{445} {bs,4150} {bp,6074} {ax,7961}]} {[{477} {cj,3961} {ck,5710} {cj,7469}]} {[{372} {bp,4609} {bo,6461} {bd,8199}]} {[{456} {cf,5486} {cf,7495}]} {[{1970} {bm,6485} {bm,9112}]} {[{432} {ac,3730} {ac,6408} {ae,8354}]} {[{866} {at,6217} {am,8882}]} {[{534} {ab,3388} {bc,5147} {bb,6895} {bb,8620}]} {[{1452} {br,6338} {bw,9087}]} {[{379} {as,4579} {bp,6345} {bo,8174}]} {[{518} {bg,3651} {bp,6357} {bp,8206}]} {[{1671} {av,6255} {av,8913}]} {[{566} {cf,6389} {cf,9294}]} {[{1478} {bg,6809} {bl,9457}]} {[{651} {ab,4772} {bg,6521} {bg,8308}]} {[{1451} {bb,6235} {bg,8866}]} {[{451} {av,3722} {av,6411} {aj,8217}]} {[{843} {av,6368} {cc,9136}]} {[{885} {cb,6277} {bq,8985}]} {[{1062} {ac,6214} {ac,8904}]}]</output>
+		<output id="contactList">[{[{ba}]} {[{as}]} {[{au}]} {[{bu}]} {[{bt}]} {[{ag}]} {[{bx}]} {[{by}]} {[{bo}]} {[{bz}]} {[{bs}]} {[{bc}]} {[{cd}]} {[{ay}]} {[{av}]} {[{al}]} {[{bj}]} {[{ar}]} {[{cb}]} {[{aw}]} {[{bw}]} {[{bq}]} {[{bn}]} {[{ae}]} {[{cg}]} {[{ca}]} {[{bp}]} {[{ah}]} {[{an}]} {[{ao}]} {[{ad}]} {[{ch}]} {[{ai}]} {[{ap}]} {[{be}]} {[{aq}]} {[{bk}]} {[{aa}]} {[{ax}]} {[{bg}]} {[{cf}]} {[{bv}]} {[{af}]} {[{ab}]} {[{ci}]} {[{bb}]} {[{ck}]} {[{bd}]} {[{br}]} {[{bl}]} {[{ce}]} {[{bf}]} {[{cc}]} {[{ak}]} {[{bh}]} {[{bm}]} {[{ac}]} {[{aj}]} {[{cj}]} {[{at}]} {[{az}]} {[{bi}]} {[{am}]}]</output>
+		<output id="contactHousesList">[{[{ba}]} {[{as}]} {[{au}]} {[{bu}]} {[{bt}]} {[{ag}]} {[{bx}]} {[{by}]} {[{bo}]} {[{bz}]} {[{bs}]} {[{bc}]} {[{cd}]} {[{ay}]} {[{av}]} {[{al}]} {[{bj}]} {[{ar}]} {[{cb}]} {[{aw}]} {[{bw}]} {[{bq}]} {[{bn}]} {[{ae}]} {[{cg}]} {[{ca}]} {[{bp}]} {[{ah}]} {[{an}]} {[{ao}]} {[{ad}]} {[{ch}]} {[{ai}]} {[{ap}]} {[{be}]} {[{aq}]} {[{bk}]} {[{aa}]} {[{ax}]} {[{bg}]} {[{cf}]} {[{bv}]} {[{af}]} {[{ab}]} {[{ci}]} {[{bb}]} {[{ck}]} {[{bd}]} {[{br}]} {[{bl}]} {[{ce}]} {[{bf}]} {[{cc}]} {[{ak}]} {[{bh}]} {[{bm}]} {[{ac}]} {[{aj}]} {[{cj}]} {[{at}]} {[{az}]} {[{bi}]} {[{am}]}]</output>
+		<output id="controlReleasesList">[]</output>
+	</final_outputs>
+</experiment>
