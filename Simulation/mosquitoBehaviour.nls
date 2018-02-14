@@ -125,7 +125,7 @@ to act-adult
    probabilistic-natural-death
    act-hungry
    ;Regular actions--------------------------------------------------------------------------------
-   ifelse(female? = false)
+   ifelse(not female?)
    [
       ;Male Actions-------------
       ifelse(maleReproductiveDelay != 0)
@@ -151,7 +151,7 @@ to act-adult-night
   act-hungry
 end  
 to probabilistic-natural-death
-  ifelse(wolbachia? = False)[
+  ifelse(not wolbachia?)[
       if(random-bool ((1 + FOGGING_KILL_PROBABILITY) * TICK_ADULT_DEATH_PROBABILITY))[act-dead]
    ][
       if(random-bool (1.5 * TICK_ADULT_DEATH_PROBABILITY))[act-dead]
