@@ -126,5 +126,7 @@ to DEBUG [every-N-step]
   if(ticks mod every-N-step = 0)[
     write "MOSQUITOES "
     print count aedesp
+    write "AEDESP"
+    print count aedesP
   ]
 end

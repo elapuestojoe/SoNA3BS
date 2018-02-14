@@ -74,13 +74,11 @@ to act-resetFemale
 end
 to act-dead
   ;Mosquito actions while dying state (finalizes bites list)**
-  if(length bitten_list > 1)[
+  ;if(length bitten_list > 1)[ ; Since the format is id, biteList, no case in storing when mosquito has only bitten one person
+  if(length bitten_list > 2)[
     set GLOBAL_BITES_LIST lput (word "{" bitten_list "}") GLOBAL_BITES_LIST
     set life_stage_ticks_list (lput life_stage_ticks life_stage_ticks_list)
   ]
-  ;if((female? = true) and (life_stage > 2) and (ovipositionCounter > 0))[set ovipositions_count lput ovipositionCounter ovipositions_count] ;INEFFICIENT!!!!!!!!!!!!!!!!!!!!!
-  ;if(life_stage > 2 and length life_stage_ticks_list > 0)[set adultAgesList (lput (convert_ratio_days_to_ticks (last life_stage_ticks_list)) adultAgesList)];INEFFICIENT!!!!!!!!!!!!!!!!!!!!!
-  ;set mosquitoLifespan (lput (convert_ratio_days_to_ticks (sum life_stage_ticks_list)) mosquitoLifespan) ;INEFFICIENT!!!!!!!!!!!!!!!!!!!!!
   die
 end
 ;;Specific life stages actions-----------------------------------------

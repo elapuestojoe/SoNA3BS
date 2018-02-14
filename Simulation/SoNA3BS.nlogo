@@ -486,7 +486,7 @@ SWITCH
 153
 STORE_BITES
 STORE_BITES
-1
+0
 1
 -1000
 
@@ -2174,7 +2174,7 @@ XML-init-write-tail-body
 XML-write-tail-outputs
 XML-finish-write-tail-body
 XML-finish-write</final>
-    <timeLimit steps="5000"/>
+    <timeLimit steps="10000"/>
     <enumeratedValueSet variable="RELEASE_FOGGING">
       <value value="false"/>
     </enumeratedValueSet>
@@ -2245,7 +2245,7 @@ XML-finish-write</final>
       <value value="false"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="STORE_BITES">
-      <value value="false"/>
+      <value value="true"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="STORE_HOUSE_CONTACT">
       <value value="false"/>
@@ -2257,7 +2257,7 @@ XML-finish-write</final>
       <value value="false"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="EXPORT_RATE">
-      <value value="144"/>
+      <value value="1000"/>
     </enumeratedValueSet>
   </experiment>
 </experiments>
