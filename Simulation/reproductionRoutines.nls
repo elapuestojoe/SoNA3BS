@@ -98,10 +98,10 @@ to act-bloodfeed
     [
       ifelse(wolbachia? or fitness_selected?)
       [
-        if(wolbachia?)[if(random-bool (1 - WOLBACHIA_EFFECTIVITY))[if(STORE_BITES and WARMUP_COMPLETED?)[set bitten_list lput (word "{" ([name] of closest_human) "," ticks "}") bitten_list]]]
-        if(fitness_selected?)[if(random-bool (1 - FITNESS_SELECTION_EFFECTIVITY))[if(STORE_BITES and WARMUP_COMPLETED?)[set bitten_list lput (word "{" ([name] of closest_human) "," ticks "}") bitten_list]]]
+        if(wolbachia?)[if(random-bool (1 - WOLBACHIA_EFFECTIVITY))[if(STORE_BITES)[set bitten_list lput (word "{" ([name] of closest_human) "," ticks "}") bitten_list]]]
+        if(fitness_selected?)[if(random-bool (1 - FITNESS_SELECTION_EFFECTIVITY))[if(STORE_BITES)[set bitten_list lput (word "{" ([name] of closest_human) "," ticks "}") bitten_list]]]
       ][
-        if(STORE_BITES and WARMUP_COMPLETED?)[set bitten_list lput (word "{" ([name] of closest_human) "," ticks "}") bitten_list]
+        if(STORE_BITES)[set bitten_list lput (word "{" ([name] of closest_human) "," ticks "}") bitten_list]
       ]
       set BITES_NUMBER (BITES_NUMBER + 1)
       set gonotrophic_cooldown 0;floor (random-normal GONOTROPHICA1_TICKS_DURATION BLOODFEED_COOLDOWN_DISPERSION)
