@@ -75,14 +75,14 @@ end
 to act-dead
   ;Mosquito actions while dying state (finalizes bites list)**
   ;if(length bitten_list > 1)[ ; Since the format is id, biteList, no case in storing when mosquito has only bitten one person
-  if(length bitten_list > 2)[
-    file-open BITE_FILE
-      file-print bitten_list
-    file-close
-    ;set GLOBAL_BITES_LIST lput (word "{" bitten_list "}") GLOBAL_BITES_LIST
+  if(length bitten_list > 1)[
+    ;file-open BITE_FILE
+      ;file-print bitten_list
+    ;file-close
+    set GLOBAL_BITES_LIST lput (word "{" bitten_list "}") GLOBAL_BITES_LIST
     set life_stage_ticks_list (lput life_stage_ticks life_stage_ticks_list)
-    write "LIFE"
-    print life_stage_ticks_list
+    ;write "LIFE"
+    ;print life_stage_ticks_list
   ]
   die
 end

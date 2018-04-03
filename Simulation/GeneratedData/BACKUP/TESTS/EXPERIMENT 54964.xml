@@ -1,0 +1,51 @@
+<experiment>
+	<header>
+		<title>Novel Control Measures.</title>
+		<author>HMSC</author>
+		<date>08:23:06.385 PM 13-feb-2018</date>
+		<description>Replicating RIDL/Wolbachia papers in smaller scale.</description>
+	</header>
+	<parameters>
+		<parameter id="SecondsPerTick">300</parameter>
+		<parameter id="ScenarioNumber">GMap</parameter>
+		<parameter id="Temperature">25</parameter>
+		<parameter id="BreedingZonesNumber">GoogleMap</parameter>
+		<independent id="HUMAN_VISITING_PROBABILITY">0.05</independent>
+	</parameters>
+	<ticks_outputs>
+		<tick id="4000">
+			<output id="MosquitoPopulation">3029</output>
+			<output id="EggsPopulation">2248</output>
+			<output id="LarvaPopulation">626</output>
+			<output id="PupaPopulation">0</output>
+			<output id="AdultPopulation">155</output>
+			<output id="WolbachiaPopulation">0</output>
+			<output id="SterilePopulation">0</output>
+			<output id="FitnessPopulation">0</output>
+			<output id="OxitecPopulation">0</output>
+			<output id="EggDeathByInhibition">0.009156988938562254</output>
+			<output id="LarvaDeathByDensity">3.8300257234134697E-4</output>
+			<output id="Temperature">25</output>
+			<output id="MeanOvipositionCount">1</output>
+			<output id="MeanAdultLifespan">15</output>
+			<output id="MeanLifespan">30</output>
+			<output id="FemalePopulation">72</output>
+		</tick>
+		<tick id="5000">
+			<output id="MosquitoPopulation">2476</output>
+			<output id="EggsPopulation">1739</output>
+			<output id="LarvaPopulation">232</output>
+			<output id="PupaPopulation">382</output>
+			<output id="AdultPopulation">123</output>
+			<output id="WolbachiaPopulation">0</output>
+			<output id="SterilePopulation">0</output>
+			<output id="FitnessPopulation">0</output>
+			<output id="OxitecPopulation">0</output>
+			<output id="EggDeathByInhibition">0.0033790166849966144</output>
+			<output id="LarvaDeathByDensity">5.901406727321166E-5</output>
+			<output id="Temperature">25</output>
+			<output id="MeanOvipositionCount">1</output>
+			<output id="MeanAdultLifespan">15</output>
+			<output id="MeanLifespan">30</output>
+			<output id="FemalePopulation">58</output>
+		</tick>

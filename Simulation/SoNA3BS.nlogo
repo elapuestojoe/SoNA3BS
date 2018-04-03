@@ -498,7 +498,7 @@ SWITCH
 215
 STORE_HUMAN_CONTACT
 STORE_HUMAN_CONTACT
-1
+0
 1
 -1000
 
@@ -509,7 +509,7 @@ SWITCH
 184
 STORE_HOUSE_CONTACT
 STORE_HOUSE_CONTACT
-1
+0
 1
 -1000
 
@@ -520,7 +520,7 @@ SWITCH
 816
 HUMAN_VISIT
 HUMAN_VISIT
-1
+0
 1
 -1000
 
@@ -673,7 +673,7 @@ SWITCH
 790
 OVITRAPS?
 OVITRAPS?
-0
+1
 1
 -1000
 
@@ -726,7 +726,7 @@ EXPORT_RATE
 EXPORT_RATE
 0
 1000
-1000.0
+144.0
 50
 1
 NIL
@@ -806,7 +806,7 @@ CHOOSER
 BreedingZonesNumber
 BreedingZonesNumber
 10 15 20 25 30 "GoogleMap"
-5
+0
 
 TEXTBOX
 1408
@@ -873,7 +873,7 @@ HUMAN_VISITING_PROBABILITY
 HUMAN_VISITING_PROBABILITY
 0
 .1
-0.05
+0.1
 .00028
 1
 NIL
@@ -1256,22 +1256,23 @@ NetLogo 6.0.1
 @#$#@#$#@
 @#$#@#$#@
 <experiments>
-  <experiment name="CatemacoBaseline_HET" repetitions="8" runMetricsEveryStep="false">
+  <experiment name="CatemacoBaseline_HET" repetitions="2" sequentialRunOrder="false" runMetricsEveryStep="false">
     <setup>setup
-XML-setup-name (word "GeneratedData/CatemacoBaseline_HET/CatemacoBaseline_HET ") 
+XML-setup-name (word "GeneratedData/DATA/CatemacoBaseline_HET ") 
 XML-init-write
 XML-write-header "Novel Control Measures." "HMSC" "Replicating RIDL/Wolbachia papers in smaller scale."
 XML-write-parameters
 XML-init-write-ticks-body</setup>
     <go>go
-XML-write-tick-outputs EXPORT_RATE</go>
+XML-write-tick-outputs EXPORT_RATE
+DEBUGX 500</go>
     <final>ask humans[die-human]
 XML-finish-write-ticks-body
 XML-init-write-tail-body
 XML-write-tail-outputs
 XML-finish-write-tail-body
 XML-finish-write</final>
-    <timeLimit steps="8760"/>
+    <timeLimit steps="20000"/>
     <enumeratedValueSet variable="RELEASE_WOLBACHIA">
       <value value="false"/>
     </enumeratedValueSet>
@@ -1297,7 +1298,7 @@ XML-finish-write</final>
       <value value="25"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="BreedingZonesNumber">
-      <value value="&quot;GoogleMap&quot;"/>
+      <value value="10"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="FOOD_DYNAMICS?">
       <value value="false"/>
@@ -1345,16 +1346,19 @@ XML-finish-write</final>
       <value value="true"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="STORE_HOUSE_CONTACT">
-      <value value="false"/>
+      <value value="true"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="STORE_HUMAN_CONTACT">
-      <value value="false"/>
+      <value value="true"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="STORE_CONTROL_RELEASES">
       <value value="false"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="EXPORT_RATE">
       <value value="144"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="HUMAN_VISITING_PROBABILITY">
+      <value value="0.1"/>
     </enumeratedValueSet>
   </experiment>
   <experiment name="CatemacoWolbachia_HET" repetitions="8" runMetricsEveryStep="false">
@@ -1553,7 +1557,7 @@ XML-finish-write</final>
       <value value="144"/>
     </enumeratedValueSet>
   </experiment>
-  <experiment name="CatemacoFogging_HET" repetitions="8" runMetricsEveryStep="false">
+  <experiment name="CatemacoFogging_HET" repetitions="4" runMetricsEveryStep="false">
     <setup>setup
 XML-setup-name (word "GeneratedData/CatemacoFogging_HET/CatemacoFogging_HET ") 
 XML-init-write
@@ -1561,14 +1565,15 @@ XML-write-header "Novel Control Measures." "HMSC" "Replicating RIDL/Wolbachia pa
 XML-write-parameters
 XML-init-write-ticks-body</setup>
     <go>go
-XML-write-tick-outputs EXPORT_RATE</go>
+XML-write-tick-outputs EXPORT_RATE
+DEBUGX 500</go>
     <final>ask humans[die-human]
 XML-finish-write-ticks-body
 XML-init-write-tail-body
 XML-write-tail-outputs
 XML-finish-write-tail-body
 XML-finish-write</final>
-    <timeLimit steps="100000"/>
+    <timeLimit steps="20000"/>
     <enumeratedValueSet variable="RELEASE_FOGGING">
       <value value="true"/>
     </enumeratedValueSet>
@@ -1594,7 +1599,7 @@ XML-finish-write</final>
       <value value="25"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="BreedingZonesNumber">
-      <value value="&quot;GoogleMap&quot;"/>
+      <value value="10"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="FOOD_DYNAMICS?">
       <value value="false"/>
@@ -2177,7 +2182,7 @@ XML-finish-write-tail-body
 XML-finish-write</final>
     <timeLimit steps="10000"/>
     <enumeratedValueSet variable="RELEASE_FOGGING">
-      <value value="false"/>
+      <value value="true"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="RELEASE_WOLBACHIA">
       <value value="false"/>
@@ -2192,7 +2197,7 @@ XML-finish-write</final>
       <value value="false"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="RELEASE_FITNESS">
-      <value value="false"/>
+      <value value="true"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="TEMPERATURE_TYPE">
       <value value="&quot;Constant&quot;"/>
