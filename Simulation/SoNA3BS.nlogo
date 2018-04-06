@@ -1298,7 +1298,7 @@ XML-finish-write</final>
       <value value="25"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="BreedingZonesNumber">
-      <value value="10"/>
+      <value value="&quot;GoogleMap&quot;"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="FOOD_DYNAMICS?">
       <value value="false"/>
@@ -1358,7 +1358,7 @@ XML-finish-write</final>
       <value value="144"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="HUMAN_VISITING_PROBABILITY">
-      <value value="0.1"/>
+      <value value="0.3"/>
     </enumeratedValueSet>
   </experiment>
   <experiment name="CatemacoWolbachia_HET" repetitions="8" runMetricsEveryStep="false">
@@ -1659,9 +1659,9 @@ XML-finish-write</final>
       <value value="144"/>
     </enumeratedValueSet>
   </experiment>
-  <experiment name="CatemacoBaseline_HOM" repetitions="8" runMetricsEveryStep="false">
+  <experiment name="CatemacoBaseline_HOM" repetitions="2" runMetricsEveryStep="false">
     <setup>setup
-XML-setup-name (word "GeneratedData/CatemacoBaseline_HOM/CatemacoBaseline_HOM ") 
+XML-setup-name (word "GeneratedData/DATA/CatemacoBaseline_HOM ") 
 XML-init-write
 XML-write-header "Novel Control Measures." "HMSC" "Replicating RIDL/Wolbachia papers in smaller scale."
 XML-write-parameters
@@ -1674,7 +1674,7 @@ XML-init-write-tail-body
 XML-write-tail-outputs
 XML-finish-write-tail-body
 XML-finish-write</final>
-    <timeLimit steps="100000"/>
+    <timeLimit steps="20000"/>
     <enumeratedValueSet variable="RELEASE_WOLBACHIA">
       <value value="false"/>
     </enumeratedValueSet>
@@ -1700,7 +1700,7 @@ XML-finish-write</final>
       <value value="25"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="BreedingZonesNumber">
-      <value value="&quot;GoogleMap&quot;"/>
+      <value value="10"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="FOOD_DYNAMICS?">
       <value value="false"/>
@@ -1742,22 +1742,25 @@ XML-finish-write</final>
       <value value="0"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="HUMAN_VISIT">
-      <value value="false"/>
+      <value value="true"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="STORE_BITES">
       <value value="true"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="STORE_HOUSE_CONTACT">
-      <value value="false"/>
+      <value value="true"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="STORE_HUMAN_CONTACT">
-      <value value="false"/>
+      <value value="true"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="STORE_CONTROL_RELEASES">
       <value value="false"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="EXPORT_RATE">
       <value value="144"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="HUMAN_VISITING_PROBABILITY">
+      <value value="0.1"/>
     </enumeratedValueSet>
   </experiment>
   <experiment name="CatemacoWolbachia_HOM" repetitions="4" runMetricsEveryStep="false">
