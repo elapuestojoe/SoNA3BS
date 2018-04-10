@@ -806,7 +806,7 @@ CHOOSER
 BreedingZonesNumber
 BreedingZonesNumber
 10 15 20 25 30 "GoogleMap"
-0
+4
 
 TEXTBOX
 1408
@@ -855,14 +855,14 @@ true
 "" ""
 PENS
 "T: rr" 1.0 0 -4539718 true "" "plot count aedesp with [ridl_gene = 0]"
-"T: Rr" 1.0 0 -11053225 true "" "plot count aedesp with [ridl_gene = 1]"
-"T: RR" 1.0 0 -16777216 true "" "plot count aedesp with [ridl_gene = 2]"
+"T: Rr_1" 1.0 0 -11053225 true "" "plot count aedesp with [ridl_gene = 1]"
+"T: RR_2" 1.0 0 -16777216 true "" "plot count aedesp with [ridl_gene = 2]"
 "M: rr" 1.0 0 -14454117 true "" "plot count aedesp with [ridl_gene = 0 and female? = false]"
 "F: rr" 1.0 0 -1184463 true "" "plot count aedesp with [ridl_gene = 0 and female?]"
-"M: Rr" 1.0 0 -955883 true "" "plot count aedesp with [ridl_gene = 1 and female? = false]"
-"F: Rr" 1.0 0 -10263788 true "" "plot count aedesp with [ridl_gene = 1 and female?]"
-"M: RR" 1.0 0 -2674135 true "" "plot count aedesp with [ridl_gene = 2 and female? = false]"
-"F: RR" 1.0 0 -1264960 true "" "plot count aedesp with [ridl_gene = 2 and female?]"
+"M: Rr_1" 1.0 0 -955883 true "" "plot count aedesp with [ridl_gene = 1 and female? = false]"
+"F: Rr_1" 1.0 0 -10263788 true "" "plot count aedesp with [ridl_gene = 1 and female?]"
+"M: RR_2" 1.0 0 -2674135 true "" "plot count aedesp with [ridl_gene = 2 and female? = false]"
+"F: RR_2" 1.0 0 -1264960 true "" "plot count aedesp with [ridl_gene = 2 and female?]"
 
 SLIDER
 579
@@ -1251,12 +1251,12 @@ false
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
 @#$#@#$#@
-NetLogo 6.0.1
+NetLogo 6.0.3
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
 <experiments>
-  <experiment name="CatemacoBaseline_HET" repetitions="2" sequentialRunOrder="false" runMetricsEveryStep="false">
+  <experiment name="CatemacoBaseline_HET" repetitions="4" sequentialRunOrder="false" runMetricsEveryStep="false">
     <setup>setup
 XML-setup-name (word "GeneratedData/DATA/CatemacoBaseline_HET ") 
 XML-init-write
@@ -1298,7 +1298,7 @@ XML-finish-write</final>
       <value value="25"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="BreedingZonesNumber">
-      <value value="&quot;GoogleMap&quot;"/>
+      <value value="30"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="FOOD_DYNAMICS?">
       <value value="false"/>
@@ -1358,7 +1358,7 @@ XML-finish-write</final>
       <value value="144"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="HUMAN_VISITING_PROBABILITY">
-      <value value="0.3"/>
+      <value value="0.1"/>
     </enumeratedValueSet>
   </experiment>
   <experiment name="CatemacoWolbachia_HET" repetitions="8" runMetricsEveryStep="false">
